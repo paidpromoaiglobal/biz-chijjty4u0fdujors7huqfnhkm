@@ -3,284 +3,733 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0D2B6E">
-<title>Pi Classes — Best Tuition Centre in Perungudi, Chennai for Physics, Chemistry &amp; Maths</title>
-<meta name="description" content="Join Pi Classes in Seevaram, Perungudi, Chennai for expert coaching in Physics, Chemistry, and Mathematics. Rated 4.9/5 with experienced faculty and modern facilities. Enroll today!">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="theme-color" content="#1565C0">
+<title>Pi Classes – Best Coaching Centre in Perungudi, Chennai | Physics Chemistry Maths</title>
+<meta name="description" content="Pi Classes in Seevaram, Perungudi, Chennai — expert coaching for Physics, Chemistry and Mathematics. Rated 4.9/5. Admissions open for 2025-26. Call 086376 70607.">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{font-family:'Plus Jakarta Sans',sans-serif;color:#0f172a;background:#fff;-webkit-font-smoothing:antialiased}
-/* ── WHATSAPP FAB ── */
-.wa-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s,box-shadow .2s}.wa-fab:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,.6)}
-/* ── SCROLL REVEAL ── */
-[data-r]{opacity:0;transform:translateY(28px);transition:opacity .65s ease,transform .65s ease;}
-[data-r].r-in{opacity:1;transform:none;}
-[data-r][data-d="1"]{transition-delay:.1s;}[data-r][data-d="2"]{transition-delay:.22s;}
-[data-r][data-d="3"]{transition-delay:.34s;}[data-r][data-d="4"]{transition-delay:.46s;}
-[data-r][data-d="5"]{transition-delay:.58s;}[data-r][data-d="6"]{transition-delay:.70s;}
-/* ── NAV ── */
-.nav-s{box-shadow:0 2px 24px rgba(0,0,0,.12)!important;}
-nav{position:fixed;top:0;left:0;right:0;z-index:900;background:rgba(255,255,255,.96);backdrop-filter:blur(14px);border-bottom:1px solid rgba(13,43,110,.1);padding:0 5vw;display:flex;align-items:center;justify-content:space-between;height:64px;transition:box-shadow .3s}
-.nav-left{display:flex;align-items:center;gap:10px}
-/* ── LOGO 360 SPIN ── */
-@keyframes logoSpin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
-.nav-logo-img{width:42px;height:42px;object-fit:contain;border-radius:50%;animation:logoSpin 6s linear infinite;flex-shrink:0}
-.nav-logo-img:hover{animation-duration:0.6s}
-.nav-brand{font-weight:800;font-size:1rem;color:#0D2B6E}
-.nav-cta{background:#0D2B6E;color:#fff;padding:9px 22px;border-radius:8px;text-decoration:none;font-size:.82rem;font-weight:600;transition:opacity .2s}
-.nav-cta:hover{opacity:.88}
-/* ── HERO ── */
-.hero{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
-.hero-bg{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=Ab43m-uu3yp4cMC7RajMmt3W_moudw6vD9sQcIWi0zcAeWKxItWwReCtFEWf-JNnjrqkbcmz2reMJCCYSB44wRDDnhgoPS7XcuEL1JjmXiH5hWtOAHcdgVnM7Dc1GF-a8S2p-FT0ZK7e3Kf4tMyhvk8beT-UGt9g37dP05Jh7WVUE9pbgq7EKvoixARCmZI_eM1N24SWRxPhFiq8-_62qKjJtYtZ84BTVAr05LVdmm42sU34Z7VYgKiL-QftDVtdEZpPP-jvsioz8HnN_q4RZ-thvrA0Fa7MzmWdR-eJ3zjl6glBgNHdO9u0O6EAlnhX983SjZbZx14Hau5FCC2VU-XQoOr--HpcngdxgCZJsHM-LAUxLkPGpCsjlC6ZIs-9aIp6ojxGD01EDjg9CTG32V4FeDVz4Ijg7jF1oRzIhu6e4OxAaA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs');background-size:cover;background-position:center;will-change:transform}
-.hero-overlay{position:absolute;inset:0;background:linear-gradient(150deg,#0D2B6Ef5 0%,#1565C0dd 55%,#0D2B6Eaa 100%)}
-.hero-inner{position:relative;z-index:2;padding:100px 24px 60px;color:#fff;max-width:700px}
-.hero-chip{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);padding:7px 18px;border-radius:50px;font-size:.74rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:28px;backdrop-filter:blur(6px)}
-.hero h1{font-size:clamp(2rem,5.5vw,3.2rem);font-weight:800;line-height:1.12;margin-bottom:18px;letter-spacing:-.03em}
-.hero p{font-size:clamp(1rem,2.2vw,1.15rem);opacity:.9;line-height:1.75;margin-bottom:36px;max-width:540px;margin-left:auto;margin-right:auto;font-weight:300}
-.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
-.btn-p{background:#fff;color:#0D2B6E;padding:14px 36px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.92rem;box-shadow:0 4px 16px rgba(0,0,0,.2);transition:transform .15s,box-shadow .15s}
-.btn-p:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(0,0,0,.25)}
-.btn-o{background:rgba(255,255,255,.12);border:1.5px solid rgba(255,255,255,.5);color:#fff;padding:13px 28px;border-radius:10px;text-decoration:none;font-weight:500;font-size:.92rem;transition:background .2s}
-.btn-o:hover{background:rgba(255,255,255,.22)}
-/* ── STATS ── */
-.stats-row{display:grid;grid-template-columns:repeat(3,1fr);background:#fff;box-shadow:0 8px 32px rgba(0,0,0,.1);position:relative;z-index:10}
-.stat{padding:24px 16px;text-align:center;border-right:1px solid #e8f0fe}
+body{font-family:'Inter',sans-serif;color:#0D1B2A;background:#fff;-webkit-font-smoothing:antialiased}
+:root{--blue:#1565C0;--blue2:#1976D2;--blue3:#42A5F5;--light:#E3F2FD;--lighter:#F0F8FF;--dark:#0D1B2A;--orange:#FF6F00}
+[data-r]{opacity:0;transform:translateY(30px);transition:opacity .6s ease,transform .6s ease}
+[data-r].r-in{opacity:1;transform:none}
+[data-r][data-d="1"]{transition-delay:.08s}[data-r][data-d="2"]{transition-delay:.2s}[data-r][data-d="3"]{transition-delay:.32s}[data-r][data-d="4"]{transition-delay:.44s}
+/* TOPBAR */
+.topbar{background:var(--blue);color:#fff;padding:8px 5vw;display:flex;align-items:center;justify-content:space-between;font-size:.78rem;flex-wrap:wrap;gap:6px}
+.topbar-l{display:flex;align-items:center;gap:20px;flex-wrap:wrap;opacity:.92}
+.topbar-r{display:flex;gap:14px}
+.topbar-r a{color:#FFE082;text-decoration:none;font-weight:600;font-size:.78rem}
+/* NAV */
+nav{background:#fff;box-shadow:0 2px 16px rgba(21,101,192,.15);position:sticky;top:0;z-index:900;padding:0 5vw}
+.nav-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:12px}
+.nav-brand{display:flex;align-items:center;gap:14px;text-decoration:none;flex-shrink:0}
+.nav-logo{width:58px;height:58px;border-radius:12px;object-fit:contain;border:2px solid var(--light);flex-shrink:0}
+.nav-name{font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;color:var(--blue);line-height:1.1;letter-spacing:-.02em}
+.nav-sub{font-size:.7rem;color:#546E7A;font-weight:500;letter-spacing:.04em;margin-top:2px}
+.nav-links{display:flex;gap:24px;list-style:none}
+.nav-links a{text-decoration:none;color:#37474F;font-size:.85rem;font-weight:500;transition:color .2s;white-space:nowrap}
+.nav-links a:hover{color:var(--blue)}
+.nav-acts{display:flex;gap:9px;flex-shrink:0}
+.btn-enq{background:var(--orange);color:#fff;padding:10px 20px;border-radius:8px;text-decoration:none;font-size:.82rem;font-weight:700;white-space:nowrap;transition:opacity .2s}
+.btn-enq:hover{opacity:.88}
+.btn-wanav{background:#25d366;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-size:.82rem;font-weight:700;display:flex;align-items:center;gap:5px;white-space:nowrap;transition:opacity .2s}
+.btn-wanav:hover{opacity:.88}
+@media(max-width:960px){.nav-links{display:none}}
+@media(max-width:540px){.nav-name{font-size:1.2rem}.nav-logo{width:44px;height:44px}.btn-enq{display:none}}
+/* ADM STRIP */
+.adm-strip{background:linear-gradient(90deg,#E65100,#FF8F00);color:#fff;text-align:center;padding:11px 5vw;font-size:.87rem;font-weight:600}
+.adm-strip a{color:#fff;text-decoration:underline;margin-left:10px;opacity:.9}
+/* HERO */
+.hero{background:linear-gradient(135deg,#0D47A1 0%,#1565C0 45%,#1E88E5 100%);overflow:hidden;padding:72px 5vw 64px;position:relative}
+.hero-circle{position:absolute;border-radius:50%;background:rgba(255,255,255,.05)}
+.hero-in{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+@media(max-width:840px){.hero-in{grid-template-columns:1fr;text-align:center}}
+.hero-chip{display:inline-flex;align-items:center;gap:7px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.28);color:#FFE082;font-size:.73rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:7px 16px;border-radius:100px;margin-bottom:20px}
+.hero h1{font-family:'Poppins',sans-serif;font-size:clamp(2rem,4.8vw,3.2rem);font-weight:900;color:#fff;line-height:1.12;letter-spacing:-.02em;margin-bottom:16px}
+.hero h1 span{color:#FFE082}
+.hero-sub{color:rgba(255,255,255,.82);font-size:clamp(.94rem,2vw,1.06rem);line-height:1.75;margin-bottom:30px;max-width:500px}
+@media(max-width:840px){.hero-sub{margin:0 auto 30px}}
+.hero-btns{display:flex;gap:11px;flex-wrap:wrap}
+@media(max-width:840px){.hero-btns{justify-content:center}}
+.btn-hw{background:#fff;color:var(--blue);padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.92rem;box-shadow:0 4px 20px rgba(0,0,0,.18);transition:transform .2s}
+.btn-hw:hover{transform:translateY(-2px)}
+.btn-ht{background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.4);color:#fff;padding:12px 26px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.92rem;transition:background .2s}
+.btn-ht:hover{background:rgba(255,255,255,.2)}
+.hero-img-col{display:flex;justify-content:center}
+@media(max-width:840px){.hero-img-col{display:none}}
+.hero-img-box{border-radius:20px;overflow:hidden;box-shadow:0 24px 64px rgba(0,0,0,.35);width:100%;max-width:440px}
+.hero-img-box img{width:100%;height:380px;object-fit:cover;display:block}
+/* STATS */
+.stats-strip{background:#fff;box-shadow:0 6px 32px rgba(21,101,192,.12)}
+.stats-in{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr)}
+@media(max-width:600px){.stats-in{grid-template-columns:repeat(2,1fr)}}
+.stat{padding:26px 16px;text-align:center;border-right:1px solid var(--light)}
 .stat:last-child{border:none}
-.stat-n{font-size:1.75rem;font-weight:800;color:#0D2B6E;line-height:1;letter-spacing:-.02em}
-.stat-l{font-size:.69rem;color:#94a3b8;text-transform:uppercase;letter-spacing:.09em;margin-top:5px;font-weight:500}
-/* ── SECTIONS ── */
-section{padding:72px 5vw}
-.container{max-width:980px;margin:0 auto}
-.sec-eyebrow{font-size:.7rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#1565C0;margin-bottom:10px}
-.sec-h2{font-size:clamp(1.6rem,3vw,2.1rem);font-weight:800;color:#0f172a;margin-bottom:10px;letter-spacing:-.03em}
-.sec-center{text-align:center;margin-bottom:48px}
-.sec-sub{color:#64748b;font-size:.94rem;max-width:500px;margin:0 auto}
-/* ── ABOUT (mobile-friendly fonts) ── */
-.about-wrap{display:grid;grid-template-columns:1fr;gap:40px;align-items:center}
-@media(min-width:768px){.about-wrap{grid-template-columns:1fr 1fr}}
-.about-img-wrap{border-radius:20px;overflow:hidden;box-shadow:0 16px 48px rgba(0,0,0,.1)}
-.about-img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}
-.about-text p{color:#334155;line-height:1.9;margin-bottom:16px;font-size:1rem;font-weight:400}
-@media(max-width:640px){.about-text p{font-size:1.02rem;line-height:1.88}}
-.hl-list{list-style:none;margin-top:20px;display:flex;flex-direction:column;gap:10px}
-.hl-list li{padding:12px 14px 12px 38px;position:relative;background:#EBF4FF;border-radius:10px;color:#1e3a5f;font-size:.95rem;border-left:3px solid #1565C0;line-height:1.55}
-@media(max-width:640px){.hl-list li{font-size:.97rem}}
-.hl-list li:before{content:'✓';color:#1565C0;position:absolute;left:13px;font-weight:800}
-/* ── SERVICES ── */
-.svc-bg{background:#EBF4FF}
-.svc-grid{display:grid;grid-template-columns:1fr;gap:18px}
-@media(min-width:480px){.svc-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:900px){.svc-grid{grid-template-columns:repeat(3,1fr)}}
-.svc-card{background:#fff;border-radius:16px;padding:28px;border:1px solid #BBDEFB;transition:transform .22s,box-shadow .22s;overflow:hidden;position:relative}
-.svc-card:hover{transform:translateY(-5px);box-shadow:0 12px 32px rgba(13,43,110,.12)}
-.svc-card:before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#0D2B6E,#42A5F5)}
-.svc-icon{width:46px;height:46px;background:#E3F2FD;border-radius:12px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.25rem}
-.svc-card h3{font-weight:700;color:#0D2B6E;margin-bottom:8px;font-size:.96rem}
-.svc-card p{color:#64748b;font-size:.86rem;line-height:1.65}
-/* ── PARALLAX ── */
-.ps-wrap{position:relative;min-height:340px;display:flex;align-items:center;overflow:hidden}
-#ps{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://maps.googleapis.com/maps/api/place/photo?maxwidth=1600&photo_reference=Ab43m-vJ3SQTBkHwjyo1x5_i_MsjPPnOx6DPl0DYCqzrgn5qWpoWiESEqa9S9VXoS7C-f3ljbS5FuvLJvXEatdG5j-ohPgCXv01PwuC7QVIyEfvIZKVJhhqtibuLblDSZp-dKCg256259YU34AY4tbjAtMfGz-VfWyFkrEodc509kEvZ7xFEJgOO6HYKTwjVtbCCmWMmIiul42hYr4iiJoe3PEr9dL53FcR8JHPx1spFqhUFwY9eWENhGDfQbVJA80kHgqviA4U5zyXx8hEaMIDUP9OFc5H_UlfeirbRHMW5rgxbZ3pha77oLj8kyRDnJ9c8DT37l6Hzu-yqiEBkEQklBzGFGm7oKppzcLFpspNGR8EFov_qy6fJ6kpjQ-G_bVXGWZ0cakV9wUEoPnlqcoQZC807WWbyeG3ZhmbxpKJW0zNQSQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs');background-size:cover;background-position:center;will-change:transform}
-.ps-overlay{position:absolute;inset:0;background:#0D2B6Eea}
-.ps-inner{position:relative;z-index:2;text-align:center;color:#fff;padding:56px 24px;width:100%}
-.ps-inner h2{font-size:clamp(1.5rem,3vw,2.1rem);font-weight:800;margin-bottom:12px;letter-spacing:-.02em}
-.ps-inner p{opacity:.85;max-width:480px;margin:0 auto 28px;font-size:.98rem;line-height:1.65}
-/* ── GALLERY ── */
-.gallery-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-@media(min-width:600px){.gallery-grid{grid-template-columns:repeat(3,1fr)}}
-.gallery-grid img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:12px;transition:transform .3s,opacity .3s}
-.gallery-grid img:hover{transform:scale(1.03);opacity:.9}
-/* ── STUDENTS SECTION ── */
-.students-bg{background:#EBF4FF}
-.students-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:0}
-@media(min-width:600px){.students-grid{grid-template-columns:repeat(3,1fr)}}
-@media(min-width:900px){.students-grid{grid-template-columns:repeat(5,1fr)}}
-.students-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:14px;border:3px solid #fff;box-shadow:0 4px 16px rgba(13,43,110,.1);transition:transform .3s}
-.students-grid img:hover{transform:scale(1.05)}
-/* ── REVIEWS ── */
-.rv-bg{background:#0D2B6E}
-.rv-grid{display:grid;grid-template-columns:1fr;gap:18px;margin-top:40px}
-@media(min-width:640px){.rv-grid{grid-template-columns:repeat(2,1fr)}}
-@media(min-width:960px){.rv-grid{grid-template-columns:repeat(3,1fr)}}
-.rv-card{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:14px;padding:24px;transition:background .2s}
-.rv-card:hover{background:rgba(255,255,255,.11)}
-.rv-stars{color:#fbbf24;font-size:1rem;margin-bottom:10px;letter-spacing:2px}
-.rv-text{color:rgba(255,255,255,.75);font-size:.92rem;line-height:1.78;font-style:italic;margin-bottom:14px}
-.rv-author{color:rgba(255,255,255,.38);font-size:.79rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em}
-/* ── CONTACT ── */
-.contact-grid{display:grid;grid-template-columns:1fr;gap:24px}
-@media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
-.contact-items{display:flex;flex-direction:column;gap:14px}
-.ci-row{display:flex;align-items:flex-start;gap:14px;padding:18px;background:#EBF4FF;border-radius:12px;border:1px solid #BBDEFB}
-.ci-icon{width:42px;height:42px;background:#0D2B6E14;border-radius:10px;display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:1.1rem}
-.ci-row h4{font-size:.78rem;color:#94a3b8;font-weight:600;margin-bottom:4px;text-transform:uppercase;letter-spacing:.07em}
-.ci-row a,.ci-row p{color:#0D2B6E;text-decoration:none;font-weight:600;font-size:.92rem}
-.cta-card{background:linear-gradient(135deg,#0D2B6E 0%,#1565C0 100%);border-radius:16px;padding:36px;color:#fff;display:flex;flex-direction:column;gap:14px}
-.cta-card h3{font-size:1.35rem;font-weight:800;letter-spacing:-.02em}
-.cta-card p{opacity:.82;font-size:.9rem;line-height:1.62}
-.btn-cta-w{background:#fff;color:#0D2B6E;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.9rem;display:inline-block;transition:transform .15s}
-.btn-cta-w:hover{transform:translateY(-2px)}
-.btn-cta-o{border:1.5px solid rgba(255,255,255,.45);color:#fff;padding:12px 26px;border-radius:10px;text-decoration:none;font-size:.9rem;display:inline-block;margin-top:8px}
-footer{background:#020617;color:#334155;padding:28px 5vw;text-align:center;font-size:.8rem}
-.footer-brand{color:#64748b;font-weight:700;font-size:.88rem;margin-bottom:6px}
+.stat-n{font-family:'Poppins',sans-serif;font-size:2rem;font-weight:800;color:var(--blue);line-height:1;letter-spacing:-.02em}
+.stat-l{font-size:.68rem;color:#78909C;text-transform:uppercase;letter-spacing:.1em;margin-top:5px;font-weight:500}
+/* COMMON */
+.container{max-width:1180px;margin:0 auto}
+.eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--blue);margin-bottom:10px}
+.h2{font-family:'Poppins',sans-serif;font-size:clamp(1.75rem,3.5vw,2.5rem);font-weight:800;color:var(--dark);letter-spacing:-.02em;line-height:1.2;margin-bottom:14px}
+.sub{color:#546E7A;font-size:.96rem;line-height:1.75;max-width:540px}
+.divider{width:60px;height:4px;background:var(--blue);border-radius:4px;margin-top:14px}
+.dc{margin-left:auto;margin-right:auto}
+/* ABOUT */
+.about-sec{padding:90px 5vw;background:#fff}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;max-width:1180px;margin:0 auto}
+@media(max-width:840px){.about-grid{grid-template-columns:1fr;gap:36px}}
+.about-img{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(21,101,192,.18);position:relative}
+.about-img img{width:100%;height:460px;object-fit:cover;display:block}
+.about-badge{position:absolute;bottom:20px;left:20px;background:#fff;border-radius:14px;padding:14px 18px;box-shadow:0 8px 28px rgba(0,0,0,.14);display:flex;align-items:center;gap:11px}
+.ab-ic{width:42px;height:42px;background:var(--light);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.3rem;flex-shrink:0}
+.ab-lb{font-size:.69rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#78909C;margin-bottom:2px}
+.ab-vl{font-size:.96rem;font-weight:800;color:var(--dark)}
+.about-text p{color:#37474F;line-height:1.85;margin-bottom:16px;font-size:.97rem}
+.feat-list{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:11px}
+.feat-list li{display:flex;align-items:flex-start;gap:11px;padding:13px 15px;background:var(--lighter);border-radius:10px;border-left:3px solid var(--blue);color:#1B3A5C;font-size:.91rem;line-height:1.55}
+.fi{color:var(--blue);font-style:normal;font-weight:800;flex-shrink:0;margin-top:1px}
+/* COURSES */
+.crs-sec{padding:90px 5vw;background:var(--lighter)}
+.crs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1180px;margin:0 auto}
+@media(max-width:840px){.crs-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.crs-grid{grid-template-columns:1fr}}
+.crs-card{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 4px 24px rgba(21,101,192,.07);transition:transform .3s,box-shadow .3s;border:1.5px solid var(--light)}
+.crs-card:hover{transform:translateY(-6px);box-shadow:0 16px 48px rgba(21,101,192,.14)}
+.crs-bar{height:4px}
+.crs-body{padding:26px 22px 18px}
+.crs-icon{width:54px;height:54px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:1.75rem;margin-bottom:14px}
+.crs-card h3{font-family:'Poppins',sans-serif;font-size:1.12rem;font-weight:700;color:var(--dark);margin-bottom:7px}
+.crs-card p{color:#546E7A;font-size:.86rem;line-height:1.65}
+.crs-foot{padding:14px 22px 22px;border-top:1px solid var(--lighter)}
+.crs-tags{display:flex;flex-wrap:wrap;gap:6px}
+.crs-tag{background:var(--light);color:var(--blue);font-size:.72rem;font-weight:600;padding:4px 11px;border-radius:100px}
+.crs-enroll{display:block;text-align:center;background:var(--blue);color:#fff;padding:11px;border-radius:9px;text-decoration:none;font-weight:700;font-size:.84rem;margin-top:14px;transition:opacity .2s}
+.crs-enroll:hover{opacity:.88}
+/* ACHIEVEMENTS */
+.ach-sec{padding:90px 5vw;background:#fff}
+.ach-intro{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1180px;margin:0 auto 52px}
+@media(max-width:840px){.ach-intro{grid-template-columns:1fr;gap:24px}}
+.ach-intro-text p{color:#37474F;line-height:1.85;margin-bottom:14px;font-size:.97rem}
+.ach-stats{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.ach-stat{background:var(--light);border-radius:14px;padding:20px;text-align:center}
+.ach-stat-n{font-family:'Poppins',sans-serif;font-size:1.85rem;font-weight:800;color:var(--blue);line-height:1}
+.ach-stat-l{font-size:.71rem;color:#78909C;text-transform:uppercase;letter-spacing:.08em;margin-top:5px;font-weight:500}
+.ach-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;max-width:1180px;margin:0 auto}
+@media(max-width:840px){.ach-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.ach-grid{grid-template-columns:1fr}}
+.ach-card{background:#fff;border-radius:18px;overflow:hidden;border:2px solid var(--light);box-shadow:0 4px 20px rgba(21,101,192,.06);transition:transform .3s,box-shadow .3s}
+.ach-card:hover{transform:translateY(-5px);box-shadow:0 16px 40px rgba(21,101,192,.13)}
+.ach-photo-wrap{position:relative;background:var(--light);aspect-ratio:3/4}
+.ach-photo-placeholder{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:linear-gradient(160deg,#E3F2FD,#BBDEFB)}
+.ach-photo-placeholder span{font-size:.77rem;font-weight:600;color:#78909C;text-align:center;line-height:1.4}
+.ach-pct-badge{position:absolute;top:14px;right:14px;background:var(--blue);color:#fff;font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;padding:8px 14px;border-radius:10px;box-shadow:0 4px 12px rgba(21,101,192,.35)}
+.ach-info{padding:15px 17px 18px}
+.ach-label{font-family:'Poppins',sans-serif;font-size:.93rem;font-weight:700;color:var(--dark);margin-bottom:5px}
+.ach-board{display:inline-block;background:var(--light);color:var(--blue);font-size:.72rem;font-weight:600;padding:4px 11px;border-radius:100px}
+.ach-cta{text-align:center;margin-top:36px;padding:26px;background:var(--lighter);border-radius:16px;border:2px dashed #BBDEFB;max-width:1180px;margin-left:auto;margin-right:auto}
+.ach-cta p{color:#546E7A;font-size:.92rem;margin-bottom:13px}
+/* WHY */
+.why-sec{padding:90px 5vw;background:var(--lighter)}
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;max-width:1180px;margin:0 auto}
+@media(max-width:840px){.why-grid{grid-template-columns:1fr;gap:32px}}
+.why-img{border-radius:20px;overflow:hidden;box-shadow:0 20px 60px rgba(21,101,192,.18)}
+.why-img img{width:100%;height:420px;object-fit:cover;display:block}
+.why-items{display:flex;flex-direction:column;gap:16px;margin-top:22px}
+.why-item{display:flex;gap:14px;align-items:flex-start;padding:17px;background:#fff;border-radius:12px;border:1px solid var(--light);box-shadow:0 2px 10px rgba(21,101,192,.05)}
+.wi-icon{width:46px;height:46px;background:var(--light);border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.35rem;flex-shrink:0}
+.why-item h4{font-size:.92rem;font-weight:700;color:var(--dark);margin-bottom:4px}
+.why-item p{font-size:.84rem;color:#546E7A;line-height:1.6}
+/* GALLERY */
+.gal-sec{padding:90px 5vw;background:#fff}
+.gal-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;max-width:1180px;margin:0 auto}
+@media(max-width:620px){.gal-grid{grid-template-columns:repeat(2,1fr)}}
+.gal-item{border-radius:13px;overflow:hidden;aspect-ratio:4/3}
+.gal-item img{width:100%;height:100%;object-fit:cover;transition:transform .4s,opacity .3s;display:block}
+.gal-item:hover img{transform:scale(1.06);opacity:.9}
+/* ENQUIRY */
+.enq-sec{padding:90px 5vw;background:linear-gradient(135deg,#0D47A1 0%,#1565C0 100%)}
+.enq-in{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:start}
+@media(max-width:840px){.enq-in{grid-template-columns:1fr;gap:32px}}
+.enq-left h2{font-family:'Poppins',sans-serif;font-size:clamp(1.75rem,3.5vw,2.3rem);font-weight:800;color:#fff;margin-bottom:15px;letter-spacing:-.02em}
+.enq-left p{color:rgba(255,255,255,.78);font-size:.96rem;line-height:1.78;margin-bottom:26px}
+.enq-bul{list-style:none;display:flex;flex-direction:column;gap:11px}
+.enq-bul li{display:flex;align-items:center;gap:9px;color:rgba(255,255,255,.82);font-size:.9rem}
+.enq-bul li:before{content:'✓';background:rgba(255,255,255,.18);color:#FFE082;width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;flex-shrink:0;font-size:.8rem}
+.enq-form{background:#fff;border-radius:20px;padding:34px;box-shadow:0 20px 60px rgba(0,0,0,.18)}
+.enq-form h3{font-family:'Poppins',sans-serif;font-size:1.22rem;font-weight:700;color:var(--dark);margin-bottom:22px}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:480px){.form-row{grid-template-columns:1fr}}
+.fg{display:flex;flex-direction:column;gap:5px;margin-bottom:12px}
+.fg label{font-size:.75rem;font-weight:600;color:#546E7A;text-transform:uppercase;letter-spacing:.06em}
+.fg input,.fg select,.fg textarea{border:1.5px solid var(--light);border-radius:9px;padding:10px 13px;font-size:.9rem;font-family:inherit;color:var(--dark);background:#fff;transition:border-color .2s;outline:none}
+.fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--blue)}
+.fg textarea{resize:vertical;min-height:85px}
+.btn-sub{width:100%;background:var(--blue);color:#fff;border:none;padding:14px;border-radius:10px;font-size:.95rem;font-weight:700;font-family:inherit;cursor:pointer;transition:opacity .2s;margin-top:4px}
+.btn-sub:hover{opacity:.88}
+.form-alt{text-align:center;margin-top:12px;color:#546E7A;font-size:.81rem}
+.form-alt a{color:#25d366;font-weight:700;text-decoration:none}
+/* REVIEWS */
+.rv-sec{padding:90px 5vw;background:var(--lighter)}
+.rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1180px;margin:0 auto}
+@media(max-width:840px){.rv-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.rv-grid{grid-template-columns:1fr}}
+.rv-card{background:#fff;border-radius:16px;padding:24px;border:1.5px solid var(--light);box-shadow:0 2px 14px rgba(21,101,192,.05);transition:transform .3s,box-shadow .3s}
+.rv-card:hover{transform:translateY(-4px);box-shadow:0 12px 36px rgba(21,101,192,.11)}
+.rv-head{display:flex;align-items:center;gap:11px;margin-bottom:11px}
+.rv-av{width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.98rem;color:#fff;flex-shrink:0}
+.rv-name{font-size:.89rem;font-weight:700;color:var(--dark)}
+.rv-sub{font-size:.72rem;color:#90A4AE;margin-top:2px}
+.rv-stars{color:#FFA000;font-size:.93rem;margin-bottom:9px;letter-spacing:2px}
+.rv-txt{color:#546E7A;font-size:.86rem;line-height:1.7}
+.rv-cta{text-align:center;margin-top:36px}
+.rv-cta a{display:inline-flex;align-items:center;gap:7px;background:var(--blue);color:#fff;padding:12px 26px;border-radius:9px;text-decoration:none;font-size:.88rem;font-weight:700;transition:opacity .2s}
+.rv-cta a:hover{opacity:.88}
+/* CONTACT */
+.ct-sec{padding:90px 5vw;background:#fff}
+.ct-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;max-width:1180px;margin:0 auto}
+@media(max-width:840px){.ct-grid{grid-template-columns:1fr}}
+.map-wrap{border-radius:18px;overflow:hidden;box-shadow:0 8px 32px rgba(21,101,192,.12)}
+.map-wrap iframe{display:block;width:100%;height:380px;border:0}
+.c-cards{display:flex;flex-direction:column;gap:13px}
+.c-card{display:flex;gap:13px;align-items:flex-start;padding:17px;background:var(--lighter);border-radius:12px;border:1.5px solid var(--light)}
+.c-ic{width:42px;height:42px;background:var(--light);border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.05rem;flex-shrink:0}
+.c-lb{font-size:.71rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#90A4AE;margin-bottom:2px}
+.c-vl{font-size:.92rem;color:var(--dark);font-weight:500;line-height:1.6}
+.c-vl a{color:var(--blue);text-decoration:none;font-weight:600}
+.cta-btns{display:flex;flex-direction:column;gap:11px;margin-top:16px}
+.btn-call{display:flex;align-items:center;justify-content:center;gap:8px;background:var(--blue);color:#fff;padding:14px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.92rem;transition:opacity .2s}
+.btn-call:hover{opacity:.88}
+.btn-wa{display:flex;align-items:center;justify-content:center;gap:8px;background:#25d366;color:#fff;padding:14px;border-radius:10px;text-decoration:none;font-weight:700;font-size:.92rem;transition:opacity .2s}
+.btn-wa:hover{opacity:.88}
+/* FOOTER */
+footer{background:#0D1B2A;color:rgba(255,255,255,.38);padding:44px 5vw 26px}
+.ft-in{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.06)}
+@media(max-width:660px){.ft-in{grid-template-columns:1fr}}
+.ft-name{font-family:'Poppins',sans-serif;font-size:1.25rem;font-weight:800;color:#fff;margin-bottom:9px}
+.ft-in p,.ft-in li{font-size:.82rem;line-height:1.8}
+.ft-col h4{font-size:.78rem;font-weight:700;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.1em;margin-bottom:12px}
+.ft-col ul{list-style:none;display:flex;flex-direction:column;gap:6px}
+.ft-col ul a{color:rgba(255,255,255,.38);text-decoration:none;font-size:.82rem;transition:color .2s}
+.ft-col ul a:hover{color:rgba(255,255,255,.7)}
+.ft-bot{max-width:1180px;margin:22px auto 0;text-align:center;font-size:.77rem}
+/* WA FAB */
+.wa-fab{position:fixed;bottom:24px;right:24px;z-index:9999;background:#25d366;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(37,211,102,.5);text-decoration:none;transition:transform .2s}
+.wa-fab:hover{transform:scale(1.1)}
 </style>
 </head>
 <body>
-<nav>
-  <div class="nav-left">
-    <img src="/images/logo.jpg" class="nav-logo-img" alt="Pi Classes Logo">
-    <span class="nav-brand">Pi Classes</span>
-  </div>
-  <a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%20found%20your%20tuition%20centre%20online%20and%20I'm%20interested%20in%20enrolling%20my%20child.%20Could%20you%20please%20share%20details%20about%20your%20courses%2C%20fees%2C%20and%20batch%20timings%3F" class="nav-cta">&#128172; WhatsApp</a>
-</nav>
 
-<div class="hero">
-  <div class="hero-bg" id="hp"></div>
-  <div class="hero-overlay"></div>
-  <div class="hero-inner">
-    <div class="hero-chip">&#11088; 4.9/5 &nbsp;&middot;&nbsp; Google Verified</div>
-    <h1>Where Toppers Are Made &mdash; Welcome to Pi Classes!</h1>
-    <p>Expert coaching in Physics, Chemistry, and Maths for board exam excellence in the heart of Perungudi, Chennai.</p>
-    <div class="hero-btns">
-      <a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%20found%20your%20tuition%20centre%20online%20and%20I'm%20interested%20in%20enrolling%20my%20child.%20Could%20you%20please%20share%20details%20about%20your%20courses%2C%20fees%2C%20and%20batch%20timings%3F" class="btn-p">Enroll Now &amp; Start Your Journey</a>
-      <a href="tel:08637670607" class="btn-o">&#128222; Call Us</a>
-    </div>
-  </div>
-</div>
-
-<div class="stats-row" data-r>
-  <div class="stat"><div class="stat-n">4.9/5</div><div class="stat-l">Rating</div></div>
-  <div class="stat"><div class="stat-n">&#10003;</div><div class="stat-l">Verified</div></div>
-  <div class="stat"><div class="stat-n">Local</div><div class="stat-l">Trusted</div></div>
-</div>
-
-<section>
-  <div class="container">
-    <div class="about-wrap">
-      <div class="about-img-wrap" data-r>
-        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-tpzxYIxr-chELFPprPTPf7oSFLwY2P4W8BgClVkd4I-AX3PqBGSYUfutWiaPMjZ362wQaTMCyuglBGmbZzFN5zb7Yjng9pXkAHiPxeVHmshstNxD2ttJcNVWvdU3QM043jyoFusaVSzQ29g_zZevDyZE0sq-fCNm3hfunmsErGn5AihUm48fsOzvzBAVZZvYAv8Uc87H6ZZyEc403xzPbyPNXlEbP1nfXs__co_dSP9YF3_gvxNLC6rxfLfRDA_feHAXEN3hd1v3Cy4nMfJJ8eL1ZWZvDHyfn7sMtZoLAqaWZPfXHOG0elTyk03lGvI4FGvcwNKDK6hQYNeWWKcK2RuViWyMPe34_u_dxyGBns8-G0U0a0TzzKIudv_bJnXpmEZPSIP4oc2qWjIl9he-8jMQFPQAskZjftIwk0WdC3jw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes" class="about-img" loading="lazy">
-      </div>
-      <div data-r data-d="2">
-        <p class="sec-eyebrow">About Us</p>
-        <h2 class="sec-h2">Pi Classes</h2>
-        <p class="about-text">Pi Classes is a premier tuition centre located in Seevaram, Perungudi, Chennai, dedicated to helping students achieve academic excellence. With highly experienced faculty specialising in Physics, Chemistry, and Mathematics, Pi Classes offers a nurturing and inspiring learning environment that brings out the best in every student.</p>
-        <p class="about-text">Rated 4.9 out of 5, we take immense pride in the success stories of our students. Our world-class facilities include a gaming zone to help students relax between sessions. Whether your child is aiming to top the class or build a stronger foundation, Pi Classes is the right place to grow, learn, and excel.</p>
-        <ul class="hl-list">
-          <li>Rated 4.9/5 &mdash; Trusted by students and parents across Perungudi, Chennai</li>
-          <li>Expert faculty with deep subject knowledge in Physics, Chemistry, and Mathematics</li>
-          <li>Modern facilities including a relaxing gaming zone for student well-being</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="svc-bg">
-  <div class="container">
-    <div class="sec-center" data-r>
-      <p class="sec-eyebrow">What We Offer</p>
-      <h2 class="sec-h2">Our Services</h2>
-      <p class="sec-sub">Everything you need, all in one place</p>
-    </div>
-    <div class="svc-grid">
-      <div class="svc-card" data-r data-d="1"><div class="svc-icon">&#9889;</div><h3>Physics Coaching</h3><p>In-depth, concept-driven Physics classes taught by highly experienced faculty, designed to help students excel in board and competitive exams.</p></div>
-      <div class="svc-card" data-r data-d="2"><div class="svc-icon">&#128161;</div><h3>Chemistry Coaching</h3><p>Comprehensive Chemistry tuition covering fundamentals to advanced topics, making complex concepts easy to understand and retain.</p></div>
-      <div class="svc-card" data-r data-d="3"><div class="svc-icon">&#127942;</div><h3>Mathematics Coaching</h3><p>Step-by-step Maths coaching focused on problem-solving techniques and exam strategies to boost confidence and scores.</p></div>
-      <div class="svc-card" data-r data-d="1"><div class="svc-icon">&#9989;</div><h3>Board Exam Preparation</h3><p>Targeted preparation programs aligned with state and national board syllabi to ensure students are fully exam-ready.</p></div>
-      <div class="svc-card" data-r data-d="2"><div class="svc-icon">&#127919;</div><h3>Doubt Clearing Sessions</h3><p>Dedicated sessions for students to clarify doubts one-on-one with expert teachers, ensuring no concept is left behind.</p></div>
-    </div>
-  </div>
-</section>
-
-<div class="ps-wrap" data-r>
-  <div id="ps"></div>
-  <div class="ps-overlay"></div>
-  <div class="ps-inner">
-    <h2>Ready to Get Started?</h2>
-    <p>First floor, 42, Seevaram 3rd St, near CURI Hospital, Seevaram, Perungudi, Chennai, Tamil Nadu 600096</p>
-    <a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%20found%20your%20tuition%20centre%20online%20and%20I'm%20interested%20in%20enrolling%20my%20child.%20Could%20you%20please%20share%20details%20about%20your%20courses%2C%20fees%2C%20and%20batch%20timings%3F" style="background:#42A5F5;color:#fff;padding:14px 36px;border-radius:10px;text-decoration:none;font-weight:700;display:inline-block;box-shadow:0 4px 16px rgba(0,0,0,.2)">&#128172; WhatsApp Us Now</a>
-  </div>
-</div>
-
-<section>
-  <div class="container">
-    <div class="sec-center" data-r>
-      <p class="sec-eyebrow">Gallery</p>
-      <h2 class="sec-h2">A Look Inside</h2>
-    </div>
-    <div class="gallery-grid">
-      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-uu3yp4cMC7RajMmt3W_moudw6vD9sQcIWi0zcAeWKxItWwReCtFEWf-JNnjrqkbcmz2reMJCCYSB44wRDDnhgoPS7XcuEL1JjmXiH5hWtOAHcdgVnM7Dc1GF-a8S2p-FT0ZK7e3Kf4tMyhvk8beT-UGt9g37dP05Jh7WVUE9pbgq7EKvoixARCmZI_eM1N24SWRxPhFiq8-_62qKjJtYtZ84BTVAr05LVdmm42sU34Z7VYgKiL-QftDVtdEZpPP-jvsioz8HnN_q4RZ-thvrA0Fa7MzmWdR-eJ3zjl6glBgNHdO9u0O6EAlnhX983SjZbZx14Hau5FCC2VU-XQoOr--HpcngdxgCZJsHM-LAUxLkPGpCsjlC6ZIs-9aIp6ojxGD01EDjg9CTG32V4FeDVz4Ijg7jF1oRzIhu6e4OxAaA&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes - Photo 1" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-tpzxYIxr-chELFPprPTPf7oSFLwY2P4W8BgClVkd4I-AX3PqBGSYUfutWiaPMjZ362wQaTMCyuglBGmbZzFN5zb7Yjng9pXkAHiPxeVHmshstNxD2ttJcNVWvdU3QM043jyoFusaVSzQ29g_zZevDyZE0sq-fCNm3hfunmsErGn5AihUm48fsOzvzBAVZZvYAv8Uc87H6ZZyEc403xzPbyPNXlEbP1nfXs__co_dSP9YF3_gvxNLC6rxfLfRDA_feHAXEN3hd1v3Cy4nMfJJ8eL1ZWZvDHyfn7sMtZoLAqaWZPfXHOG0elTyk03lGvI4FGvcwNKDK6hQYNeWWKcK2RuViWyMPe34_u_dxyGBns8-G0U0a0TzzKIudv_bJnXpmEZPSIP4oc2qWjIl9he-8jMQFPQAskZjftIwk0WdC3jw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes - Photo 2" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-vJ3SQTBkHwjyo1x5_i_MsjPPnOx6DPl0DYCqzrgn5qWpoWiESEqa9S9VXoS7C-f3ljbS5FuvLJvXEatdG5j-ohPgCXv01PwuC7QVIyEfvIZKVJhhqtibuLblDSZp-dKCg256259YU34AY4tbjAtMfGz-VfWyFkrEodc509kEvZ7xFEJgOO6HYKTwjVtbCCmWMmIiul42hYr4iiJoe3PEr9dL53FcR8JHPx1spFqhUFwY9eWENhGDfQbVJA80kHgqviA4U5zyXx8hEaMIDUP9OFc5H_UlfeirbRHMW5rgxbZ3pha77oLj8kyRDnJ9c8DT37l6Hzu-yqiEBkEQklBzGFGm7oKppzcLFpspNGR8EFov_qy6fJ6kpjQ-G_bVXGWZ0cakV9wUEoPnlqcoQZC807WWbyeG3ZhmbxpKJW0zNQSQ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes - Photo 3" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-tp_zFGsI1lOY695bCQyKV0B5ChmYFQMHRvaaDY0rhJK7L02GCkbi7qOiHyGI9-y_EK8-1QZvfVkp9jrQanwvBuMMSdJfbnrDRfu8b7bmtQA0wPt533hviKoVN_S0dblrtTAmQu5CU4s2bBr0A_mCts1bUTp3h1HOP4N_sAxs74NwUK5_3J0iN6Lgjh3INHDpwfrZe-nM-_79FPg9fDZTFWiSkiBTH9FyEN_eZKydaC-t-NELPQMy87p1Y4MAuzIhZWB30Lf0rjhn9f-u76fombYz_h08K7IWE2g1YrrC8iSLevkBw-R3mdanQ2uTd-0JemW267DbH1ji3BCUoZoyqqnNA_9dFOBw-0IvBGgEs24QinoXowbnujbRz0D9WzX5nMufbuFax5iRfx0bPuHYq-Jolcq4RflEqiPXwllMCXJg&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes - Photo 4" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-sGJg6o7BibDCY1ivSQGcUKxrbl4a7GZumTgk6u6ucN23if41bHbdBtmA9-pt9YQDF9L7AsV8Gq96zoLa4godgQC2bznNCT0fVYjMSyZ-1EXoNmXiW7EURf0zZAzSsHgaDLW2CmvNp6mvvPRuzbWOS7BQ1wvoBNRd2o6eEKkSsd1Othl_y1ua4_dAqqLt31U7p8A2NSDLPjPSzEd0AzuGCn3G5QgGvIK45sVqCkOd9AHfj6uf_T1YTxiz1ah3Mc9AiaqU420YQOohY3ZKk483opx3bJ-y2sWfWDVhsOBX8erA8tWiOAiMBY3H8c8uqFMuSGT2oNLEY8nigDmU6Pub4TiaXUJghHR1ElB0PvnbkcdijhnBQxqLScaGSe3MBoF_YdfgsXEUTaVJQkK-5VD5RqCZBMuL_A9AL0ToSEVmMLsDKR2DbXDyrBjdgXkjPH&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes - Photo 5" loading="lazy" onerror="this.parentElement.remove()">
-    </div>
-  </div>
-</section>
-
-<section class="students-bg">
-  <div class="container">
-    <div class="sec-center" data-r>
-      <p class="sec-eyebrow">Our Students</p>
-      <h2 class="sec-h2">Student Moments</h2>
-      <p class="sec-sub">Real students, real results — proud moments from Pi Classes</p>
-    </div>
-    <div class="students-grid">
-      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-tKd6BH6HtZG3DXTzOK8tSGkGN4YAqPljbMuL3fm3WQ2T5YAIcPhptOyAGq2yA2uOGesOpolDRWQD0SYekHR37Z4vw8U7OKABOwA6yk-5ildknYlCW8Ble4SQOY0Y-hdG0cyE5bJMzne_mvunGBs3hjDn46k_twtlU-0vO8xdydLjUCsDVsboInzKMNLFjbtf8dgg2d3caQc0IoADElaGuAFojJOyPknrgUGFqzvGWfuPfxQyAGPyh99w2kdM2LXJb7vmx1YpIy1Km2BOZyCY9G-Fk11lnD6FPrfaGsNo0vB6mTosdJcUKSBjFS-9n0p_5zksBE7noBxWOH8ZqTvd569G6pwHfok4dKgPKFeqbeuhQwPq92R4dpsbqJlc5yylQd4ZXl_ZGDRJr0V4_ZFY3TfmCJtiT2vqBGJAvv4RESF6XybNeXArADauOJk3AZ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes Students - Photo 1" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-sp5FnHfEyy1QGw_37X6Rtn-TNLLsUGER38alxaMDNR0cUpkL6YMPlK5clitoaJpAQqzbxKyLBso52TyFA3dLP5-eL-LNgrFpkQgb5Yr6ZOXpY6pONXAFjGUflUDfx4IxFygfiHmCjihEBZUnndOM4ALVriuYAJseQ3vbKiOSrvZIyaD_lBeNDwGXE06zHD4UUHFG6yQhZ8u_f5EMGgUrhX-486rh-vFCe3Gn5OO6HKh2TDvMaaO8CsfuYIFu9h1Kl4oPz0K87kGt0ll24tI6hSmFA9Q7yCZefbbHU-fx50IJmVzYb1kIZYoYznwUvIJmfPQ2yUZK1W9yevK62_RRcVFzR82Px1-RHgeU23TpkNjlPESk4ZsPqOnZvLa4URVvyhrHtkVv1zTEdw5sjPSPt9oT1jcnc7W_pWFpJL49F5x63wtqJtxmx3tF3CpN-U&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes Students - Photo 2" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-u2H52UVR7j2jabB9T2T4ZE8TN8g71fIcQmpRPuuFtmSExLRWqKvkeFoC56SRInFC16prLvwU8TnY8J1eIa5Siy8eR0wHyDRbyI17LwXw0Vi_hG5EGfFSrISgHnrbOwob-0I23FOWJmrXugmrNTUwO0DUWP0mgxhKJbNPzkK5IQMAgMgKb7rAjuHRhLha9IQpQ_V4vWxRbzejEnprZXxXUnugHU7WdSEhZCbiNO4NcADTaPyzr7vnHiR-bcmEvzjbsLsSnf5gC1RSCGpzw9spHDJ5uln5b8NxpbEdEnkv5Tgo2tBRCHwP2ftd3Cftj2hcHSzvuuUk3eQOfgsBFe7fA518bIb8TMN9TqcP9wyb7r1EcbkuwlxhwfvL80uY1N0KzfQ3dXzPJpZtmH8ZN4ytmle9ynlYUbzG_szHpZD2YfgnbPI_aZmILYZqueZ6_p&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes Students - Photo 3" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-tX2zbGtY3iaN1bDj-XxVF33zzWkotZCQNkQbQLLiqh9Bybwc2bGWGvtDQ3G83Wz2KIZCXkInPdkGYE5HX712ti72nk6LEuE4ilk6d7YXmMpeF7conS5i7ggtM0avUOrl3XVlp9r_4CiXVdWYXmZ9lkYHSM_iKZar_DabAJGkpwZydkpILdAipI1pcZYXH4qBPZ4X8y7Mi21zUfd9NWLiON4rs3I8-mf8jPjqy2Ron8GuixQ3iJ7hs_WE7g10G7-92y4_CLObjJn3JNUoTtmF6FzdqprkEwi_Smr5eJvBxt6_fsDMCGuJCLw79mWMkMOmKZJQ0ASVhks-w9elFRgQZEsNZuirBo_j_OFV3hhx7Myv4_dsBMkIZ2vETtDOQjgLYuQMaJ4ccIyLPYvlV4ZSTtvwOg4Qe0pjxPK5EIkSvELy7bAhixEq-rqc4b2pzS&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes Students - Photo 4" loading="lazy" onerror="this.parentElement.remove()"><img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=Ab43m-vk3mKWjOYwJgx9OiZADKgFoQQC9MdkapApPOCoQzHKAK-qRpLfpiXCNYRthf1qn8yWEP95ll_1HSEnNkEF235BFjcCP3x5x33PXZpaxBlm4zXXVm8y7wB8nmXbIKZm1Tcxnlahqtbjey1m2fQj57bzBq8RLcpzW66wXq3M3yqEyGbwJieRyCH2bFEKFP5ZU-eZY1ZrJF8VEMvkXvuzHJaIk2LQRmkNfv9MugDuomoX6qn3oojMUeRxp79gNCJQ3jxuElO_YZlb6uE4JdoqyqfuVRc6kaERun461EZTSa-_MFAdR63Wz-CJYse80Z5uIx42jLdyBtuowdfgn1epG5oVs4e48Arjb4SkZyzh52ZCGJGqd8eWPiVJ0WLQmZhSayla9IGyg8NmneDqn4OSLDrICsKT3acDBcLTQn78SFdDaDxewNOzaypvKuZkmmd6&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes Students - Photo 5" loading="lazy" onerror="this.parentElement.remove()">
-    </div>
-  </div>
-</section>
-
-<section class="rv-bg">
-  <div class="container">
-    <div class="sec-center" data-r>
-      <p class="sec-eyebrow" style="color:rgba(255,255,255,.45)">Testimonials</p>
-      <h2 class="sec-h2" style="color:#fff">What Students Say</h2>
-      <p class="sec-sub" style="color:rgba(255,255,255,.42)">Real feedback from real people</p>
-    </div>
-    <div class="rv-grid">
-      <div class="rv-card" data-r><div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rv-text">&ldquo;Amazing tuition! Come to this place to be the next topper. The Physics, Chem, and Maths teachers are the best when it comes to teaching. They all have very good experience and excellent explanation skills.&rdquo;</p><div class="rv-author">&mdash; Mit Maker</div></div>
-      <div class="rv-card" data-r><div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rv-text">&ldquo;I am immensely impressed with Pi Classes. Their unwavering dedication to academic excellence, exceptional faculty, holistic approach, and excellent facilities make it an outstanding choice.&rdquo;</p><div class="rv-author">&mdash; Jayanthi Vimal</div></div>
-      <div class="rv-card" data-r><div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rv-text">&ldquo;Ashwin teacher is my son&rsquo;s teacher. He is good at teaching and a great inspirer for students.&rdquo;</p><div class="rv-author">&mdash; EJ Lee</div></div>
-      <div class="rv-card" data-r><div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rv-text">&ldquo;Best tuition centre for board preparation. The interior is awesome and it even has a gaming zone to relax yourself!&rdquo;</p><div class="rv-author">&mdash; Sanjith Saran</div></div>
-      <div class="rv-card" data-r><div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div><p class="rv-text">&ldquo;This is one of the best tuitions I have ever attended. I absolutely love this center!&rdquo;</p><div class="rv-author">&mdash; Tamil Gamer Duke</div></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container">
-    <div class="sec-center" data-r>
-      <p class="sec-eyebrow">Contact</p>
-      <h2 class="sec-h2">Get In Touch</h2>
-      <p class="sec-sub">We&rsquo;d love to hear from you</p>
-    </div>
-    <div class="contact-grid">
-      <div class="contact-items" data-r>
-        <div class="ci-row"><div class="ci-icon">&#128222;</div><div><h4>Phone</h4><a href="tel:08637670607">086376 70607</a></div></div>
-        <div class="ci-row"><div class="ci-icon">&#128205;</div><div><h4>Address</h4><p>First floor, 42, Seevaram 3rd St, near CURI Hospital, Seevaram, Perungudi, Chennai, Tamil Nadu 600096</p></div></div>
-        <div class="ci-row"><div class="ci-icon">&#128336;</div><div><h4>Hours</h4><p>Mon&ndash;Fri: 10:00 AM &ndash; 8:00 PM &nbsp;|&nbsp; Sat&ndash;Sun: 10:00 AM &ndash; 9:00 PM</p></div></div>
-        <div class="ci-row"><div class="ci-icon">&#128506;</div><div><h4>Directions</h4><a href="https://maps.google.com/?cid=4836557757423414963" target="_blank" rel="noopener">View on Google Maps</a></div></div>
-      </div>
-      <div class="cta-card" data-r data-d="2">
-        <h3>Let&rsquo;s Talk</h3>
-        <p>Have questions? We respond within minutes on WhatsApp. Feel free to reach out anytime.</p>
-        <a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%20found%20your%20tuition%20centre%20online%20and%20I'm%20interested%20in%20enrolling%20my%20child.%20Could%20you%20please%20share%20details%20about%20your%20courses%2C%20fees%2C%20and%20batch%20timings%3F" class="btn-cta-w">&#128172; WhatsApp Now</a>
-        <a href="tel:08637670607" class="btn-cta-o">&#128222; 086376 70607</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-brand">Pi Classes</div>
-  <div>&copy; 2026 &middot; First floor, 42, Seevaram 3rd St, near CURI Hospital, Seevaram, Perungudi, Chennai 600096</div>
-</footer>
-
-<a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%20found%20your%20tuition%20centre%20online%20and%20I'm%20interested%20in%20enrolling%20my%20child.%20Could%20you%20please%20share%20details%20about%20your%20courses%2C%20fees%2C%20and%20batch%20timings%3F" class="wa-fab" aria-label="WhatsApp">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+<a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%27m%20interested%20in%20enrolling.%20Please%20share%20details%20about%20courses%2C%20fees%20and%20batch%20timings." class="wa-fab" aria-label="WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
 </a>
 
+<!-- TOP BAR -->
+<div class="topbar">
+  <div class="topbar-l">
+    <span>&#128205; Perungudi, Chennai 600096</span>
+    <span>&#128222; 086376 70607</span>
+    <span>&#128336; Mon–Fri: 10AM–8PM &nbsp;|&nbsp; Sat–Sun: 10AM–9PM</span>
+  </div>
+  <div class="topbar-r">
+    <a href="https://wa.me/918637670607">&#128172; WhatsApp</a>
+    <a href="#enquiry">Enquire Now</a>
+  </div>
+</div>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="nav-in">
+    <a href="#" class="nav-brand">
+      <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photo_reference=AaVGc3m_Jq0XKpmskMkTpU9UiSN25FU-mheqvYygGXJgxwhsCZwr93Y29EnJ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" class="nav-logo" alt="Pi Classes" onerror="this.style.display='none'">
+      <div>
+        <div class="nav-name">Pi Classes</div>
+        <div class="nav-sub">Physics &bull; Chemistry &bull; Mathematics</div>
+      </div>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#achievements">Results</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#reviews">Reviews</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-acts">
+      <a href="#enquiry" class="btn-enq">&#128221; Enquire Now</a>
+      <a href="https://wa.me/918637670607" target="_blank" rel="noopener" class="btn-wanav">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ADMISSION STRIP -->
+<div class="adm-strip">
+  &#127881; Admissions Open for 2025–26 Batch &mdash; Limited Seats Available!
+  <a href="#enquiry">Register Your Interest &rarr;</a>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-circle" style="width:520px;height:520px;top:-110px;right:-90px"></div>
+  <div class="hero-circle" style="width:320px;height:320px;bottom:-60px;left:-60px"></div>
+  <div class="hero-in">
+    <div data-r>
+      <div class="hero-chip">&#11088; 4.9/5 Rated &bull; Google Verified &bull; Perungudi, Chennai</div>
+      <h1>Chennai&rsquo;s Most Trusted<br><span>Science Coaching</span><br>Centre</h1>
+      <p class="hero-sub">Expert coaching for Physics, Chemistry &amp; Mathematics. Personalised attention, proven board results, and a team that truly cares about your child&rsquo;s success.</p>
+      <div class="hero-btns">
+        <a href="#enquiry" class="btn-hw">&#128221; Enquire Now — Free</a>
+        <a href="https://wa.me/918637670607" target="_blank" rel="noopener" class="btn-ht">&#128172; WhatsApp Us</a>
+      </div>
+    </div>
+    <div class="hero-img-col" data-r data-d="2">
+      <div class="hero-img-box">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3nt_3VrLQV1R6VcEwy3DaQU4wNuyGUNgaKQ_e6NUDF95KI-I-7ktGXb&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes classroom">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-strip">
+  <div class="stats-in">
+    <div class="stat" data-r><div class="stat-n">4.9/5</div><div class="stat-l">Google Rating</div></div>
+    <div class="stat" data-r data-d="2"><div class="stat-n">3+</div><div class="stat-l">Years Experience</div></div>
+    <div class="stat" data-r data-d="3"><div class="stat-n">PCM</div><div class="stat-l">Subjects Covered</div></div>
+    <div class="stat" data-r data-d="4"><div class="stat-n">7 Days</div><div class="stat-l">Open Every Week</div></div>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="about-sec" id="about">
+  <div class="about-grid">
+    <div data-r>
+      <div class="about-img">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3m4HaTK7iLebEQInDgRswV0TeIBjWbqaxHDIdt8l02FFoaDa2-FG9R5&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes centre">
+        <div class="about-badge">
+          <div class="ab-ic">&#11088;</div>
+          <div><div class="ab-lb">Google Rating</div><div class="ab-vl">4.9/5 &bull; 21+ Reviews</div></div>
+        </div>
+      </div>
+    </div>
+    <div data-r data-d="2">
+      <p class="eyebrow">About Pi Classes</p>
+      <h2 class="h2">Where Students Become Board Toppers</h2>
+      <div class="divider"></div><br>
+      <div class="about-text">
+        <p>Pi Classes is Perungudi&rsquo;s leading coaching centre for Physics, Chemistry and Mathematics, located in Seevaram near CURI Hospital, Chennai. We combine deep conceptual understanding with board-smart exam techniques — the formula that consistently produces toppers.</p>
+        <p>Our experienced faculty delivers small-batch, personalised coaching to ensure every student gets the attention they deserve. Plus, we have a gaming zone to help students relax and recharge between sessions!</p>
+      </div>
+      <ul class="feat-list">
+        <li><i class="fi">&#9654;</i>Small batches — every student gets individual attention</li>
+        <li><i class="fi">&#9654;</i>Board-focused curriculum with chapter tests and mock exams</li>
+        <li><i class="fi">&#9654;</i>Proven track record producing school and district toppers</li>
+        <li><i class="fi">&#9654;</i>Modern facility with a student gaming zone to unwind</li>
+        <li><i class="fi">&#9654;</i>Open 7 days a week — Mon–Fri 10AM–8PM, Sat–Sun 10AM–9PM</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- COURSES -->
+<section class="crs-sec" id="courses">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px" data-r>
+      <p class="eyebrow">Our Courses</p>
+      <h2 class="h2">What We Teach</h2>
+      <div class="divider dc"></div><br>
+      <p class="sub" style="margin:0 auto">Expert board-focused coaching in the three core science subjects. Designed for Classes 9–12.</p>
+    </div>
+    <div class="crs-grid">
+      <div class="crs-card" data-r>
+        <div class="crs-bar" style="background:linear-gradient(90deg,#1565C0,#42A5F5)"></div>
+        <div class="crs-body">
+          <div class="crs-icon" style="background:#E3F2FD">&#9883;&#65039;</div>
+          <h3>Physics</h3>
+          <p>From mechanics to modern physics — build intuition alongside formula mastery. Comprehensive board and competitive exam preparation.</p>
+        </div>
+        <div class="crs-foot">
+          <div class="crs-tags"><span class="crs-tag">Class 9–12</span><span class="crs-tag">CBSE</span><span class="crs-tag">State Board</span></div>
+          <a href="#enquiry" class="crs-enroll">Enroll Now &rarr;</a>
+        </div>
+      </div>
+      <div class="crs-card" data-r data-d="2">
+        <div class="crs-bar" style="background:linear-gradient(90deg,#00695C,#26A69A)"></div>
+        <div class="crs-body">
+          <div class="crs-icon" style="background:#E0F2F1">&#129514;</div>
+          <h3>Chemistry</h3>
+          <p>Organic, Inorganic and Physical Chemistry made simple. Build strong conceptual foundations and excel in your board examinations.</p>
+        </div>
+        <div class="crs-foot">
+          <div class="crs-tags"><span class="crs-tag">Class 9–12</span><span class="crs-tag">CBSE</span><span class="crs-tag">State Board</span></div>
+          <a href="#enquiry" class="crs-enroll" style="background:#00695C">Enroll Now &rarr;</a>
+        </div>
+      </div>
+      <div class="crs-card" data-r data-d="3">
+        <div class="crs-bar" style="background:linear-gradient(90deg,#E65100,#FF9800)"></div>
+        <div class="crs-body">
+          <div class="crs-icon" style="background:#FFF3E0">&#128210;</div>
+          <h3>Mathematics</h3>
+          <p>Algebra, Calculus, Trigonometry and beyond. Systematic problem-solving that transforms maths from fear to strength.</p>
+        </div>
+        <div class="crs-foot">
+          <div class="crs-tags"><span class="crs-tag">Class 9–12</span><span class="crs-tag">CBSE</span><span class="crs-tag">State Board</span></div>
+          <a href="#enquiry" class="crs-enroll" style="background:#E65100">Enroll Now &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="ach-sec" id="achievements">
+  <div style="max-width:1180px;margin:0 auto">
+    <div class="ach-intro">
+      <div data-r>
+        <p class="eyebrow">Results &amp; Achievements</p>
+        <h2 class="h2">Our Students Shine at Every Board</h2>
+        <div class="divider"></div><br>
+        <div class="ach-intro-text">
+          <p>Pi Classes students consistently score in the 95th percentile and above across both CBSE and Tamil Nadu State Board examinations. Our intensive board preparation and revision programmes make the crucial difference.</p>
+          <p>Student toppers&rsquo; photos and mark sheets will be displayed here. Parents — please share your child&rsquo;s board results with us for recognition on this page!</p>
+        </div>
+      </div>
+      <div class="ach-stats" data-r data-d="2">
+        <div class="ach-stat"><div class="ach-stat-n">95%+</div><div class="ach-stat-l">Avg Score</div></div>
+        <div class="ach-stat"><div class="ach-stat-n">CBSE</div><div class="ach-stat-l">&amp; State Board</div></div>
+        <div class="ach-stat"><div class="ach-stat-n">4.9/5</div><div class="ach-stat-l">Google Rating</div></div>
+        <div class="ach-stat"><div class="ach-stat-n">7 Days</div><div class="ach-stat-l">Open Every Week</div></div>
+      </div>
+    </div>
+    <div class="ach-grid">
+        <div class="ach-card" data-r data-d="1">
+          <div class="ach-photo-wrap">
+            <div class="ach-photo-placeholder">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span>Student Photo<br>Coming Soon</span>
+            </div>
+            <div class="ach-pct-badge">98%</div>
+          </div>
+          <div class="ach-info">
+            <div class="ach-label">Topper — Physics</div>
+            <div class="ach-board">State Board</div>
+          </div>
+        </div>
+        <div class="ach-card" data-r data-d="2">
+          <div class="ach-photo-wrap">
+            <div class="ach-photo-placeholder">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span>Student Photo<br>Coming Soon</span>
+            </div>
+            <div class="ach-pct-badge">99%</div>
+          </div>
+          <div class="ach-info">
+            <div class="ach-label">All India Rank 1</div>
+            <div class="ach-board">CBSE</div>
+          </div>
+        </div>
+        <div class="ach-card" data-r data-d="3">
+          <div class="ach-photo-wrap">
+            <div class="ach-photo-placeholder">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span>Student Photo<br>Coming Soon</span>
+            </div>
+            <div class="ach-pct-badge">97.5%</div>
+          </div>
+          <div class="ach-info">
+            <div class="ach-label">School Topper</div>
+            <div class="ach-board">State Board</div>
+          </div>
+        </div>
+        <div class="ach-card" data-r data-d="1">
+          <div class="ach-photo-wrap">
+            <div class="ach-photo-placeholder">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span>Student Photo<br>Coming Soon</span>
+            </div>
+            <div class="ach-pct-badge">98.8%</div>
+          </div>
+          <div class="ach-info">
+            <div class="ach-label">District Topper</div>
+            <div class="ach-board">CBSE</div>
+          </div>
+        </div>
+        <div class="ach-card" data-r data-d="2">
+          <div class="ach-photo-wrap">
+            <div class="ach-photo-placeholder">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span>Student Photo<br>Coming Soon</span>
+            </div>
+            <div class="ach-pct-badge">96%</div>
+          </div>
+          <div class="ach-info">
+            <div class="ach-label">Science Topper</div>
+            <div class="ach-board">State Board</div>
+          </div>
+        </div>
+        <div class="ach-card" data-r data-d="3">
+          <div class="ach-photo-wrap">
+            <div class="ach-photo-placeholder">
+              <svg width="52" height="52" viewBox="0 0 24 24" fill="none" stroke="#90CAF9" stroke-width="1.5"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+              <span>Student Photo<br>Coming Soon</span>
+            </div>
+            <div class="ach-pct-badge">99.2%</div>
+          </div>
+          <div class="ach-info">
+            <div class="ach-label">Board Merit</div>
+            <div class="ach-board">CBSE</div>
+          </div>
+        </div>
+    </div>
+    <div class="ach-cta" data-r>
+      <p>&#128247; Student achievement photos with marks &amp; board certificates will be updated here. We proudly celebrate every topper from Pi Classes!</p>
+      <a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%20want%20to%20share%20my%20child%27s%20board%20results%20for%20the%20website." style="display:inline-block;background:var(--blue);color:#fff;padding:12px 26px;border-radius:9px;text-decoration:none;font-weight:700;font-size:.88rem">&#128172; Share Student Results</a>
+    </div>
+  </div>
+</section>
+
+<!-- WHY US -->
+<section class="why-sec">
+  <div class="why-grid">
+    <div data-r>
+      <div class="why-img">
+        <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=800&photo_reference=AaVGc3kgFW0Md5AmxsdfuauGT6b7i-h1KODmXolFxgr2p3bWenowJhAoo73D&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes teaching">
+      </div>
+    </div>
+    <div data-r data-d="2">
+      <p class="eyebrow">Why Choose Us</p>
+      <h2 class="h2">The Pi Classes Difference</h2>
+      <div class="divider"></div>
+      <div class="why-items">
+        <div class="why-item">
+          <div class="wi-icon">&#127979;</div>
+          <div><h4>Expert, Dedicated Faculty</h4><p>Specialists passionate about teaching — committed to every student&rsquo;s success in board exams and beyond.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="wi-icon">&#128202;</div>
+          <div><h4>Small Batches, Big Results</h4><p>Limited batch sizes ensure individual attention. No student is left behind or lost in the crowd.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="wi-icon">&#128218;</div>
+          <div><h4>Board-Smart Preparation</h4><p>Regular chapter tests, mock exams and question-paper practice so students walk into the board hall fully prepared.</p></div>
+        </div>
+        <div class="why-item">
+          <div class="wi-icon">&#127918;</div>
+          <div><h4>Student-Friendly Environment</h4><p>Comfortable, modern classrooms plus a gaming zone to relax — because happy students learn better.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="gal-sec" id="gallery">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:44px" data-r>
+      <p class="eyebrow">Photo Gallery</p>
+      <h2 class="h2">Inside Pi Classes</h2>
+      <div class="divider dc"></div>
+    </div>
+    <div class="gal-grid">
+        <div class="gal-item" data-r data-d="1">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AaVGc3m_Jq0XKpmskMkTpU9UiSN25FU-mheqvYygGXJgxwhsCZwr93Y29EnJ&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes 1" loading="lazy">
+        </div>
+        <div class="gal-item" data-r data-d="2">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AaVGc3nt_3VrLQV1R6VcEwy3DaQU4wNuyGUNgaKQ_e6NUDF95KI-I-7ktGXb&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes 2" loading="lazy">
+        </div>
+        <div class="gal-item" data-r data-d="3">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AaVGc3m4HaTK7iLebEQInDgRswV0TeIBjWbqaxHDIdt8l02FFoaDa2-FG9R5&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes 3" loading="lazy">
+        </div>
+        <div class="gal-item" data-r data-d="1">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AaVGc3kgFW0Md5AmxsdfuauGT6b7i-h1KODmXolFxgr2p3bWenowJhAoo73D&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes 4" loading="lazy">
+        </div>
+        <div class="gal-item" data-r data-d="2">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AaVGc3k2jsARTK_w7eB-RaQv1FbJTM2EpuxeEt2ZpQpjbT3A_G9IngrkMM4G&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes 5" loading="lazy">
+        </div>
+        <div class="gal-item" data-r data-d="3">
+          <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=700&photo_reference=AaVGc3kxB9WTjRIRwYb_Kru6-cFHcBENY9MZqmLFT9f0CA5qzu3utRPYPGSu&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Pi Classes 6" loading="lazy">
+        </div>
+    </div>
+  </div>
+</section>
+
+<!-- ENQUIRY -->
+<section class="enq-sec" id="enquiry">
+  <div class="enq-in">
+    <div class="enq-left" data-r>
+      <p class="eyebrow" style="color:rgba(255,224,130,.7)">Get In Touch</p>
+      <h2>Start Your Child&rsquo;s Journey to the Top</h2>
+      <p>Fill in the form and our team will respond within minutes. Or message us directly on WhatsApp — we&rsquo;re always available!</p>
+      <ul class="enq-bul">
+        <li>Free first consultation — no obligation</li>
+        <li>Flexible batch timings around school hours</li>
+        <li>Courses for Class 9, 10, 11 &amp; 12</li>
+        <li>CBSE and Tamil Nadu State Board</li>
+        <li>Open 7 days a week, 10 AM to 9 PM</li>
+      </ul>
+    </div>
+    <div class="enq-form" data-r data-d="2">
+      <h3>&#128221; Enquiry Form</h3>
+      <div class="form-row">
+        <div class="fg"><label>Student Name *</label><input type="text" id="eq-sn" placeholder="Full name" required></div>
+        <div class="fg"><label>Parent / Guardian</label><input type="text" id="eq-pn" placeholder="Full name"></div>
+      </div>
+      <div class="form-row">
+        <div class="fg"><label>Phone Number *</label><input type="tel" id="eq-ph" placeholder="Mobile number" required></div>
+        <div class="fg"><label>Class / Grade *</label>
+          <select id="eq-gr">
+            <option value="">Select class…</option>
+            <option>Class 9</option><option>Class 10</option>
+            <option>Class 11</option><option>Class 12</option>
+          </select>
+        </div>
+      </div>
+      <div class="fg"><label>Subject(s) of Interest</label>
+        <select id="eq-sb">
+          <option value="">Select subject…</option>
+          <option>Physics</option><option>Chemistry</option><option>Mathematics</option>
+          <option>Physics + Chemistry</option><option>Physics + Maths</option>
+          <option>Chemistry + Maths</option><option>Physics + Chemistry + Maths (PCM)</option>
+        </select>
+      </div>
+      <div class="fg"><label>Message (optional)</label><textarea id="eq-ms" placeholder="Any specific questions or requirements…"></textarea></div>
+      <button class="btn-sub" onclick="submitEnq()">Send Enquiry via WhatsApp &#128172;</button>
+      <div class="form-alt">Or call us: <a href="tel:08637670607">086376 70607</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section class="rv-sec" id="reviews">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:44px" data-r>
+      <p class="eyebrow">Student &amp; Parent Reviews</p>
+      <h2 class="h2">What Our Students Say</h2>
+      <div class="divider dc"></div>
+    </div>
+    <div class="rv-grid">
+        <div class="rv-card" data-r data-d="1">
+          <div class="rv-head">
+            <div class="rv-av" style="background:#1565C0">M</div>
+            <div><div class="rv-name">Mit Maker</div><div class="rv-sub">Google Review</div></div>
+          </div>
+          <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rv-txt">&ldquo;Amazing tuition. Come to this place to be the next topper. The Physics, Chemistry and Maths teachers are the best when it comes to board exams!&rdquo;</p>
+        </div>
+        <div class="rv-card" data-r data-d="2">
+          <div class="rv-head">
+            <div class="rv-av" style="background:#0277BD">J</div>
+            <div><div class="rv-name">Jayanthi Vimal</div><div class="rv-sub">Google Review</div></div>
+          </div>
+          <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rv-txt">&ldquo;I am immensely impressed with Pi Classes. Their unwavering dedication to academic excellence and exceptional teaching methods make this the top coaching centre.&rdquo;</p>
+        </div>
+        <div class="rv-card" data-r data-d="3">
+          <div class="rv-head">
+            <div class="rv-av" style="background:#00695C">E</div>
+            <div><div class="rv-name">EJ Lee</div><div class="rv-sub">Google Review</div></div>
+          </div>
+          <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rv-txt">&ldquo;Ashwin teacher is my son's teacher. He is excellent at teaching and a great inspirer for students. Highly recommend!&rdquo;</p>
+        </div>
+        <div class="rv-card" data-r data-d="1">
+          <div class="rv-head">
+            <div class="rv-av" style="background:#558B2F">S</div>
+            <div><div class="rv-name">Sanjith Saran</div><div class="rv-sub">Google Review</div></div>
+          </div>
+          <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rv-txt">&ldquo;Best tuition centre for board preparation. The interior is awesome and it even has a gaming zone to relax yourself between sessions!&rdquo;</p>
+        </div>
+        <div class="rv-card" data-r data-d="2">
+          <div class="rv-head">
+            <div class="rv-av" style="background:#6A1B9A">T</div>
+            <div><div class="rv-name">Tamil Gamer Duke</div><div class="rv-sub">Google Review</div></div>
+          </div>
+          <div class="rv-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+          <p class="rv-txt">&ldquo;This is one of the best tuition centres I have attended. I love this centre — the teaching quality is outstanding.&rdquo;</p>
+        </div>
+    </div>
+    <div class="rv-cta" data-r>
+      <a href="https://search.google.com/local/writereview?placeid=ChIJJTy4U0FdUjoRs-7huqfnHkM" target="_blank" rel="noopener">&#11088; Write a Google Review</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="ct-sec" id="contact">
+  <div class="ct-grid">
+    <div data-r>
+      <p class="eyebrow">Find Us</p>
+      <h2 class="h2" style="margin-bottom:22px">Visit Pi Classes</h2>
+      <div class="map-wrap">
+        <iframe src="https://maps.google.com/maps?q=12.953478,80.241896&z=16&output=embed" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+    <div data-r data-d="2">
+      <p class="eyebrow" style="margin-top:52px">Contact Details</p>
+      <h2 class="h2" style="margin-bottom:22px">Get In Touch</h2>
+      <div class="c-cards">
+        <div class="c-card"><div class="c-ic">&#128205;</div><div><div class="c-lb">Address</div><div class="c-vl">First floor, 42, Seevaram 3rd St, near CURI Hospital, Seevaram, Perungudi, Chennai, Tamil Nadu 600096, India</div></div></div>
+        <div class="c-card"><div class="c-ic">&#128222;</div><div><div class="c-lb">Phone</div><div class="c-vl"><a href="tel:08637670607">086376 70607</a></div></div></div>
+        <div class="c-card"><div class="c-ic">&#128336;</div><div><div class="c-lb">Hours</div><div class="c-vl">Mon–Fri: 10:00 AM – 8:00 PM<br>Sat–Sun: 10:00 AM – 9:00 PM</div></div></div>
+      </div>
+      <div class="cta-btns">
+        <a href="tel:08637670607" class="btn-call">&#128222; Call 086376 70607</a>
+        <a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%27m%20interested%20in%20enrolling." target="_blank" rel="noopener" class="btn-wa">
+          <svg width="19" height="19" viewBox="0 0 24 24" fill="#fff"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 00-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="ft-in">
+    <div>
+      <div class="ft-name">Pi Classes</div>
+      <p>Expert coaching for Physics, Chemistry &amp; Mathematics in Perungudi, Chennai. Producing board toppers every year.</p>
+    </div>
+    <div class="ft-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#courses">Our Courses</a></li>
+        <li><a href="#achievements">Results</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div class="ft-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="tel:08637670607">086376 70607</a></li>
+        <li><a href="https://wa.me/918637670607">WhatsApp Us</a></li>
+        <li><a href="#contact">42, Seevaram 3rd St, Perungudi, Chennai 600096</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="ft-bot">&copy; 2026 Pi Classes. All rights reserved. &bull; Perungudi, Chennai, Tamil Nadu</div>
+</footer>
+
 <script>
-(function(){var els=document.querySelectorAll('[data-r]');if(!els.length)return;var obs=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('r-in');obs.unobserve(e.target);}});},{threshold:0.1,rootMargin:'0px 0px -48px 0px'});els.forEach(function(el){obs.observe(el);});})();
-(function(){var nav=document.querySelector('nav');if(!nav)return;window.addEventListener('scroll',function(){nav.classList.toggle('nav-s',window.scrollY>50);},{passive:true});})();
-if(window.innerWidth>768){var hp=document.getElementById('hp'),ps=document.getElementById('ps');window.addEventListener('scroll',function(){var y=window.scrollY;if(hp)hp.style.transform='translateY('+y*.3+'px)';if(ps){var r=ps.closest('.ps-wrap').getBoundingClientRect();ps.style.transform='translateY('+r.top*.2+'px)';}},{passive:true});}
+const io=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('r-in');io.unobserve(x.target);}});},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('[data-r]').forEach(el=>io.observe(el));
+function submitEnq(){
+  const sn=document.getElementById('eq-sn').value.trim();
+  const ph=document.getElementById('eq-ph').value.trim();
+  const gr=document.getElementById('eq-gr').value;
+  const sb=document.getElementById('eq-sb').value;
+  const ms=document.getElementById('eq-ms').value.trim();
+  if(!sn||!ph){alert('Please fill in Student Name and Phone Number.');return;}
+  const txt='Hi+Pi+Classes!%0AEnquiry+Details:%0AStudent:+'+encodeURIComponent(sn)+'%0APhone:+'+encodeURIComponent(ph)+(gr?'%0AClass:+'+encodeURIComponent(gr):'')+(sb?'%0ASubjects:+'+encodeURIComponent(sb):'')+(ms?'%0AMessage:+'+encodeURIComponent(ms):'');
+  window.open('https://wa.me/918637670607?text='+txt,'_blank');
+}
 </script>
 </body>
 </html>
