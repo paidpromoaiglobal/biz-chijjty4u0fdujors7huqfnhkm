@@ -19,7 +19,7 @@ body{font-family:'Inter',sans-serif;color:#0D1B2A;background:#fff;-webkit-font-s
 nav{background:#fff;box-shadow:0 2px 16px rgba(21,101,192,.15);position:sticky;top:0;z-index:900;padding:0 5vw}
 .nav-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:82px;gap:12px}
 .nav-brand{display:flex;align-items:center;gap:14px;text-decoration:none;flex-shrink:0}
-.nav-logo{width:58px;height:58px;object-fit:contain;flex-shrink:0}
+.nav-logo{width:52px;height:52px;object-fit:cover;border-radius:50%;flex-shrink:0}
 .nav-name{font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;color:var(--blue);line-height:1.1;letter-spacing:-.02em}
 .nav-links{display:flex;gap:24px;list-style:none}
 .nav-links a{text-decoration:none;color:#37474F;font-size:.85rem;font-weight:500;transition:color .2s;white-space:nowrap}
@@ -30,7 +30,7 @@ nav{background:#fff;box-shadow:0 2px 16px rgba(21,101,192,.15);position:sticky;t
 .btn-wanav{background:#25d366;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-size:.82rem;font-weight:700;display:flex;align-items:center;gap:5px;white-space:nowrap;transition:opacity .2s}
 .btn-wanav:hover{opacity:.88}
 @media(max-width:960px){.nav-links{display:none}}
-@media(max-width:540px){.nav-name{font-size:1.2rem}.nav-logo{width:46px;height:46px}.btn-enq{display:none}}
+@media(max-width:540px){.nav-name{font-size:1.2rem}.nav-logo{width:40px;height:40px}.btn-enq{display:none}}
 /* HERO */
 .hero{background:linear-gradient(135deg,#0D47A1 0%,#1565C0 45%,#1E88E5 100%);overflow:hidden;padding:72px 5vw 64px;position:relative}
 .hero-circle{position:absolute;border-radius:50%;background:rgba(255,255,255,.05)}
@@ -110,41 +110,52 @@ nav{background:#fff;box-shadow:0 2px 16px rgba(21,101,192,.15);position:sticky;t
 .crs-enroll:hover{opacity:.88}
 /* ACHIEVEMENTS */
 .ach-sec{padding:0;background:#0A1628;overflow:hidden}
-.ach-banner{background:linear-gradient(135deg,#0D47A1 0%,#1565C0 55%,#0D47A1 100%);padding:52px 5vw 44px;border-bottom:4px solid #FFD700}
-.ach-banner-in{max-width:1180px;margin:0 auto;display:flex;align-items:center;justify-content:center;gap:28px;flex-wrap:wrap;text-align:center}
-.ach-banner-logo-area{display:flex;flex-direction:column;align-items:center;gap:8px}
-.ach-banner-logo{width:72px;height:72px;object-fit:contain}
-.ach-banner-logo-name{font-family:'Poppins',sans-serif;font-size:1.1rem;font-weight:800;color:#fff}
-.ach-eyebrow{font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#FFE082;margin-bottom:10px}
-.ach-main-title{font-family:'Poppins',sans-serif;font-size:clamp(2rem,5vw,3.8rem);font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.04em;line-height:1.1;margin-bottom:16px;text-shadow:0 2px 16px rgba(0,0,0,.3)}
-.ach-main-title span{color:#FFD700}
-.ach-boards-row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
-.ach-boards-row span{background:rgba(255,255,255,.14);border:1px solid rgba(255,215,0,.35);color:#FFE082;font-size:.71rem;font-weight:700;padding:5px 14px;border-radius:100px;letter-spacing:.06em}
-.ach-stats-bar{background:#FFD700;padding:14px 5vw}
-.ach-stats-bar-in{max-width:1180px;margin:0 auto;display:flex;justify-content:center;flex-wrap:wrap}
-.asb-item{flex:1;min-width:110px;text-align:center;padding:8px 16px;border-right:1px solid rgba(0,0,0,.1)}
-.asb-item:last-child{border:none}
-.asb-n{font-family:'Poppins',sans-serif;font-size:1.85rem;font-weight:900;color:#0D1B2A;line-height:1}
-.asb-l{font-size:.66rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:#37474F;margin-top:3px}
-.ach-toppers-wrap{padding:40px 5vw 48px;background:#0A1628}
-.ach-toppers-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;max-width:1180px;margin:0 auto}
-@media(max-width:1100px){.ach-toppers-grid{grid-template-columns:repeat(4,1fr)}}
-@media(max-width:700px){.ach-toppers-grid{grid-template-columns:repeat(3,1fr)}}
-@media(max-width:430px){.ach-toppers-grid{grid-template-columns:repeat(2,1fr)}}
-.topper-card{background:#fff;border-radius:10px;overflow:hidden;border:2px solid rgba(255,215,0,.2);transition:transform .3s,box-shadow .3s}
-.topper-card:hover{transform:translateY(-5px);box-shadow:0 14px 40px rgba(255,215,0,.15)}
-.topper-photo-area{position:relative;aspect-ratio:3/4;background:linear-gradient(160deg,#1A237E,#283593);display:flex;align-items:center;justify-content:center}
-.topper-photo-area img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
-.tp-placeholder{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;width:100%;height:100%}
-.tp-placeholder span{font-size:.6rem;color:rgba(255,255,255,.42);text-align:center;line-height:1.3}
-.tp-score{position:absolute;top:8px;right:8px;background:#FFD700;color:#0D1B2A;font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:900;padding:4px 9px;border-radius:7px;line-height:1.2}
-.tp-board{position:absolute;top:8px;left:8px;background:#C62828;color:#fff;font-size:.6rem;font-weight:700;padding:3px 8px;border-radius:6px;text-transform:uppercase;letter-spacing:.04em}
-.topper-info{padding:9px 9px 11px;background:#0D1B2A}
-.topper-name{font-family:'Poppins',sans-serif;font-size:.77rem;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-bottom:2px}
-.topper-subject{font-size:.64rem;color:#90A4AE}
-.ach-cta-bar{background:#1565C0;padding:32px 5vw;text-align:center}
-.ach-cta-bar p{color:rgba(255,255,255,.78);margin-bottom:14px;font-size:.9rem}
-.ach-cta-btn{display:inline-flex;align-items:center;gap:8px;background:#FFD700;color:#0D1B2A;padding:12px 28px;border-radius:9px;text-decoration:none;font-weight:800;font-size:.9rem;transition:opacity .2s}
+.ach-layout{display:grid;grid-template-columns:250px 1fr 250px}
+@media(max-width:1080px){.ach-layout{grid-template-columns:1fr}}
+.ach-side{background:#8B0000;display:flex;flex-direction:column;overflow:hidden}
+@media(max-width:1080px){.ach-side{display:none}}
+.ach-side-hd{background:#6D0000;padding:14px 10px;text-align:center;border-bottom:3px solid #FFD700}
+.ach-side-hd-title{font-family:'Poppins',sans-serif;font-size:.8rem;font-weight:900;color:#FFD700;text-transform:uppercase;letter-spacing:.06em;line-height:1.4}
+.ach-side-list{padding:8px;display:flex;flex-direction:column;gap:6px;flex:1}
+.ach-side-row{display:flex;align-items:center;gap:8px;padding:8px 7px;background:rgba(0,0,0,.25);border-radius:7px}
+.ach-side-thumb{width:40px;height:50px;border-radius:5px;background:#6D0000;flex-shrink:0;overflow:hidden;display:flex;align-items:center;justify-content:center;border:1.5px solid rgba(255,215,0,.25)}
+.ach-side-thumb img{width:100%;height:100%;object-fit:cover;object-position:top}
+.ach-side-data{flex:1;min-width:0}
+.ach-side-score{font-family:'Poppins',sans-serif;font-size:1.3rem;font-weight:900;color:#FFD700;line-height:1}
+.ach-side-pct-lbl{font-size:.54rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:.08em;font-weight:700}
+.ach-side-name{font-size:.69rem;font-weight:700;color:#fff;margin-top:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.ach-side-board{font-size:.61rem;color:rgba(255,215,0,.65)}
+.ach-side-more{text-align:center;color:#fff;font-weight:900;font-size:.9rem;padding:14px 8px;background:rgba(0,0,0,.2);letter-spacing:.04em;border-top:1px solid rgba(255,215,0,.2)}
+.ach-center{background:linear-gradient(180deg,#EEF2FF 0%,#E8EDF7 100%);display:flex;flex-direction:column}
+.ach-center-top{background:linear-gradient(135deg,#0D47A1 0%,#1565C0 60%,#0D47A1 100%);padding:26px 20px 22px;text-align:center;border-bottom:4px solid #FFD700}
+.ach-logo-row{display:flex;align-items:center;justify-content:center;gap:12px;margin-bottom:10px}
+.ach-center-logo{width:54px;height:54px;object-fit:cover;border-radius:50%}
+.ach-brand-name{font-family:'Poppins',sans-serif;font-size:1.35rem;font-weight:900;color:#FFD700;letter-spacing:.04em}
+.ach-center-title{font-family:'Poppins',sans-serif;font-size:clamp(1.4rem,3.5vw,2.5rem);font-weight:900;color:#fff;text-transform:uppercase;letter-spacing:.06em;text-shadow:0 2px 12px rgba(0,0,0,.4);line-height:1.1;margin-bottom:8px}
+.ach-center-sub{color:rgba(255,255,255,.7);font-size:.77rem;letter-spacing:.07em;margin-bottom:12px}
+.ach-boards-chips{display:flex;gap:7px;justify-content:center;flex-wrap:wrap}
+.ach-boards-chips span{background:rgba(255,255,255,.13);border:1px solid rgba(255,215,0,.32);color:#FFE082;font-size:.67rem;font-weight:700;padding:4px 11px;border-radius:100px}
+.ach-stats-bar{background:#FFD700;display:grid;grid-template-columns:repeat(4,1fr)}
+.ach-stat-col{text-align:center;padding:11px 6px;border-right:1px solid rgba(0,0,0,.08)}
+.ach-stat-col:last-child{border:none}
+.ach-sn{font-family:'Poppins',sans-serif;font-size:1.5rem;font-weight:900;color:#0D1B2A;line-height:1}
+.ach-sl{font-size:.59rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#37474F;margin-top:2px}
+.ach-students-body{padding:16px 12px;flex:1}
+.ach-students-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
+@media(max-width:840px){.ach-students-grid{grid-template-columns:repeat(4,1fr)}}
+@media(max-width:500px){.ach-students-grid{grid-template-columns:repeat(3,1fr)}}
+.ach-stu-card{text-align:center}
+.ach-stu-rank{font-size:.57rem;font-weight:800;color:#C62828;background:#FFE8E8;padding:2px 6px;border-radius:4px;display:inline-block;margin-bottom:4px;letter-spacing:.04em}
+.ach-stu-photo{width:100%;aspect-ratio:3/4;border-radius:6px;overflow:hidden;border:2px solid #1565C0;margin-bottom:4px;background:linear-gradient(160deg,#1A237E,#283593);display:flex;align-items:center;justify-content:center;position:relative}
+.ach-stu-photo img{width:100%;height:100%;object-fit:cover;object-position:top;display:block}
+.ach-stu-ph{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;width:100%;height:100%}
+.ach-stu-ph span{font-size:.5rem;color:rgba(255,255,255,.36);text-align:center;line-height:1.2}
+.ach-stu-pct{position:absolute;bottom:4px;right:4px;background:#FFD700;color:#0D1B2A;font-size:.62rem;font-weight:900;padding:2px 5px;border-radius:4px;line-height:1.2}
+.ach-stu-name{font-size:.61rem;font-weight:700;color:#0D1B2A;line-height:1.3;margin-bottom:1px}
+.ach-stu-board{font-size:.57rem;color:#546E7A}
+.ach-cta-strip{background:#1565C0;padding:22px 16px;text-align:center}
+.ach-cta-strip p{color:rgba(255,255,255,.75);font-size:.84rem;margin-bottom:10px}
+.ach-cta-btn{display:inline-flex;align-items:center;gap:8px;background:#FFD700;color:#0D1B2A;padding:10px 22px;border-radius:8px;text-decoration:none;font-weight:800;font-size:.87rem;transition:opacity .2s}
 .ach-cta-btn:hover{opacity:.88}
 /* FACULTY */
 .faculty-sec{padding:90px 5vw;background:#fff}
@@ -367,6 +378,202 @@ footer{background:#0D1B2A;color:rgba(255,255,255,.38);padding:44px 5vw 26px}
   </div>
 </div>
 
+<!-- ACHIEVEMENTS -->
+<section class="ach-sec" id="achievements">
+  <div class="ach-layout">
+    <div class="ach-side">
+      <div class="ach-side-hd"><div class="ach-side-hd-title">Pi Classes<br>Board Toppers<br>2024&ndash;25</div></div>
+      <div class="ach-side-list">
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">98%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">CBSE &bull; Class 12</div></div></div>
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">99%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">ICSE &bull; Class 10</div></div></div>
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">97.5%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">Matric &bull; Class 12</div></div></div>
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">98.8%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">CBSE &bull; Class 12</div></div></div>
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">96%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">IGCSE &bull; Class 11</div></div></div>
+      </div>
+    </div>
+    <div class="ach-center">
+      <div class="ach-center-top">
+        <div class="ach-logo-row">
+          <img src="https://lh3.googleusercontent.com/d/1dsfKs4TuSG-agMuqKhjpQ5Zr5tPd4hod" alt="Pi Classes" class="ach-center-logo">
+          <span class="ach-brand-name">Pi Classes</span>
+        </div>
+        <h2 class="ach-center-title">GLORY OF OUR TOPPERS</h2>
+        <div class="ach-center-sub">Board Examinations 2024&ndash;25 &bull; Perungudi, Chennai</div>
+        <div class="ach-boards-chips"><span>CBSE</span><span>ICSE</span><span>IGCSE</span><span>Matriculation</span></div>
+      </div>
+      <div class="ach-stats-bar">
+        <div class="ach-stat-col"><div class="ach-sn">95%+</div><div class="ach-sl">Avg Score</div></div>
+        <div class="ach-stat-col"><div class="ach-sn">4</div><div class="ach-sl">Boards</div></div>
+        <div class="ach-stat-col"><div class="ach-sn">4.9/5</div><div class="ach-sl">Google Rating</div></div>
+        <div class="ach-stat-col"><div class="ach-sn">9 Yrs</div><div class="ach-sl">Experience</div></div>
+      </div>
+      <div class="ach-students-body">
+        <div class="ach-students-grid">
+  <div class="ach-stu-card" data-r data-d="1">
+    <div class="ach-stu-rank">Physics Topper</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">98%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">CBSE &bull; Class 12</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="2">
+    <div class="ach-stu-rank">School Rank 1</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">97.5%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">ICSE &bull; Class 10</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="3">
+    <div class="ach-stu-rank">Science Topper</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">99%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">Matric &bull; Class 12</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="4">
+    <div class="ach-stu-rank">Maths Topper</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">100%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">CBSE &bull; Class 10</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="1">
+    <div class="ach-stu-rank">District Rank</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">96%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">IGCSE &bull; Class 11</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="2">
+    <div class="ach-stu-rank">Board Merit</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">98.8%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">Matric &bull; Class 12</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="3">
+    <div class="ach-stu-rank">Chemistry Top</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">97%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">CBSE &bull; Class 11</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="4">
+    <div class="ach-stu-rank">School Rank 1</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">99.2%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">ICSE &bull; Class 10</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="1">
+    <div class="ach-stu-rank">PCM Topper</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">98.4%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">Matric &bull; Class 12</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="2">
+    <div class="ach-stu-rank">Science Top</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">97.8%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">CBSE &bull; Class 11</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="3">
+    <div class="ach-stu-rank">Board Rank 5</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">96.5%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">IGCSE &bull; Class 10</div>
+  </div>
+  <div class="ach-stu-card" data-r data-d="4">
+    <div class="ach-stu-rank">Maths Merit</div>
+    <div class="ach-stu-photo">
+      <div class="ach-stu-ph">
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.3)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+        <span>Photo<br>Soon</span>
+      </div>
+      <div class="ach-stu-pct">99.5%</div>
+    </div>
+    <div class="ach-stu-name">Student Name</div>
+    <div class="ach-stu-board">ICSE &bull; Class 12</div>
+  </div>
+        </div>
+      </div>
+      <div class="ach-cta-strip">
+        <p>&#128247; Student topper photos with marks will be displayed here soon. Share your child&rsquo;s board results!</p>
+        <a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%20want%20to%20share%20my%20child%27s%20board%20results." class="ach-cta-btn">&#128172; Share Results</a>
+      </div>
+    </div>
+    <div class="ach-side">
+      <div class="ach-side-hd"><div class="ach-side-hd-title">Pi Classes<br>Board Toppers<br>2024&ndash;25</div></div>
+      <div class="ach-side-list">
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">99.5%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">ICSE &bull; Class 10</div></div></div>
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">97%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">CBSE &bull; Class 11</div></div></div>
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">98.4%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">Matric &bull; Class 12</div></div></div>
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">96.5%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">IGCSE &bull; Class 10</div></div></div>
+        <div class="ach-side-row"><div class="ach-side-thumb"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></div><div class="ach-side-data"><div class="ach-side-score">97.8%</div><div class="ach-side-pct-lbl">**MARKS**</div><div class="ach-side-name">Student Name</div><div class="ach-side-board">CBSE &bull; Class 11</div></div></div>
+      </div>
+      <div class="ach-side-more">AND MANY MORE...</div>
+    </div>
+  </div>
+</section>
+
 <!-- ABOUT -->
 <section class="about-sec" id="about">
   <div class="about-grid">
@@ -484,209 +691,6 @@ footer{background:#0D1B2A;color:rgba(255,255,255,.38);padding:44px 5vw 26px}
         </div>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section class="ach-sec" id="achievements">
-  <div class="ach-banner" data-r>
-    <div class="ach-banner-in">
-      <div class="ach-banner-logo-area">
-        <img src="https://lh3.googleusercontent.com/d/1dsfKs4TuSG-agMuqKhjpQ5Zr5tPd4hod" alt="Pi Classes" class="ach-banner-logo">
-        <span class="ach-banner-logo-name">Pi Classes</span>
-      </div>
-      <div>
-        <div class="ach-eyebrow">Board Examinations 2024&ndash;25</div>
-        <h2 class="ach-main-title">OUR PROUD <span>TOPPERS</span></h2>
-        <div class="ach-boards-row">
-          <span>CBSE</span><span>ICSE</span><span>IGCSE</span><span>Matriculation</span>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ach-stats-bar">
-    <div class="ach-stats-bar-in">
-      <div class="asb-item"><div class="asb-n">95%+</div><div class="asb-l">Avg Score</div></div>
-      <div class="asb-item"><div class="asb-n">4</div><div class="asb-l">Boards</div></div>
-      <div class="asb-item"><div class="asb-n">4.9/5</div><div class="asb-l">Google Rating</div></div>
-      <div class="asb-item"><div class="asb-n">9 Yrs</div><div class="asb-l">Experience</div></div>
-    </div>
-  </div>
-  <div class="ach-toppers-wrap">
-    <div class="ach-toppers-grid">
-      <div class="topper-card" data-r data-d="1">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">98%</div>
-          <div class="tp-board">CBSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">Physics Topper &bull; Class 12</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="2">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">97.5%</div>
-          <div class="tp-board">ICSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">School Rank 1 &bull; Class 10</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="3">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">99%</div>
-          <div class="tp-board">Matric</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">Science Topper &bull; Class 12</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="4">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">100%</div>
-          <div class="tp-board">CBSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">Maths Topper &bull; Class 10</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="1">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">96%</div>
-          <div class="tp-board">IGCSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">District Rank &bull; Class 11</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="2">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">98.8%</div>
-          <div class="tp-board">Matric</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">Board Merit &bull; Class 12</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="3">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">97%</div>
-          <div class="tp-board">CBSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">Chemistry Top &bull; Class 11</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="4">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">99.2%</div>
-          <div class="tp-board">ICSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">School Rank 1 &bull; Class 10</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="1">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">98.4%</div>
-          <div class="tp-board">Matric</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">PCM Topper &bull; Class 12</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="2">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">97.8%</div>
-          <div class="tp-board">CBSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">Science Top &bull; Class 11</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="3">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">96.5%</div>
-          <div class="tp-board">IGCSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">Board Rank 5 &bull; Class 10</div>
-        </div>
-      </div>
-      <div class="topper-card" data-r data-d="4">
-        <div class="topper-photo-area">
-          <div class="tp-placeholder">
-            <svg width="44" height="44" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
-            <span>Photo<br>Coming Soon</span>
-          </div>
-          <div class="tp-score">99.5%</div>
-          <div class="tp-board">ICSE</div>
-        </div>
-        <div class="topper-info">
-          <div class="topper-name">Student Name</div>
-          <div class="topper-subject">Maths Merit &bull; Class 12</div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="ach-cta-bar" data-r>
-    <p>&#128247; Student topper photos with marks &amp; board certificates will be displayed here soon. We proudly celebrate every achiever from Pi Classes!</p>
-    <a href="https://wa.me/918637670607?text=Hi%20Pi%20Classes!%20I%20want%20to%20share%20my%20child%27s%20board%20results%20for%20the%20website." class="ach-cta-btn">&#128172; Share Student Results</a>
   </div>
 </section>
 
